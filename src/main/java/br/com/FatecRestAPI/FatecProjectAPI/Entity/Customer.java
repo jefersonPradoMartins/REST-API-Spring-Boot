@@ -1,4 +1,4 @@
-package br.Entity;
+package br.com.FatecRestAPI.FatecProjectAPI.Entity;
 
 import jakarta.persistence.*;
 import lombok.*;
