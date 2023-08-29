@@ -7,11 +7,13 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import br.com.FatecRestAPI.FatecProjectAPI.Entity.Product;
 import br.com.FatecRestAPI.FatecProjectAPI.Repository.ProductRepository;
 
+@Service
 public class ProductService  {
 
     @Autowired
