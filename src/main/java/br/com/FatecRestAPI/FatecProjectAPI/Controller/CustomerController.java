@@ -59,7 +59,8 @@ public class CustomerController {
     @GetMapping(value="/findCustomer/{idCustomer}")
     public ResponseEntity<Object> getCustomerById(@PathVariable Long idCustomer) {
         Optional<Customer> result = customerService.findCustomerById(idCustomer);
-        return ResponseEntity.status(HttpStatus.OK).body(ResponseGenericException.response(result));
+        return ResponseEntity.status(HttpStatus.OK)
+        .body(ResponseGenericException.response(result));
     }
     
     
